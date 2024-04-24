@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="cuadro">
+            <div class="content encabezado"> </div>
+            <div class="content encabezado"> TALLA </div>
+            <div class="content encabezado"> FORMULA </div>
+            <div class="content encabezado"> RESULTADO </div>
+            <div class="content nombre"> Contorno de cuello </div>
+            <input class="content enter" type="number" value="" id="id1" placeholder="Medida...">
+            <div class="content formula"> 1/6 </div>
+            <div class="content resultado" id="result1"></div>
+            <div class="content nombre"> Ancho de espalda </div>
+            <input class="content enter" type="number" value="" id="id2">
+            <div class="content formula"> 1/2 </div>
+            <div class="content resultado" id="result2"></div>
+            <div class="content nombre">Talle delantero</div>
+            <input class="content enter" type="number" value="" id="id3">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result3"></div>
+            <div class="content nombre">Talle espalda</div>
+            <input class="content enter" type="number" value="" id="id4">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result4"></div>
+            <div class="content nombre"> Alto de busto</div>
+            <input class="content enter" type="number" value="" id="id5">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result5"></div>
+            <div class="content nombre">Separación de busto</div>
+            <input class="content enter" type="number" value="" id="id6">
+            <div class="content formula"> 1/2 </div>
+            <div class="content resultado" id="result6"></div>
+            <div class="content nombre">Alto de escote</div>
+            <input class="content enter" type="number" value="" id="id7">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result7"></div>
+            <div class="content nombre">Contorno de Tórax</div>
+            <input class="content enter" type="number" value="" id="id8">
+            <div class="content formula">1/4</div>
+            <div class="content resultado" id="result8"></div>
+            <div class="content nombre">Contorno de Busto</div>
+            <input class="content enter" type="number" value="" id="id9">
+            <div class="content formula"> 1/4</div>
+            <div class="content resultado" id="result9"></div>
+            <div class="content nombre">Contorno de cintura</div>
+            <input class="content enter" type="number" value="" id="id10">
+            <div class="content formula">1/4</div>
+            <div class="content resultado" id="result10"></div>
+            <div class="content nombre">Contorno de cadera</div>
+            <input class="content enter" type="number" value="" id="id11">
+            <div class="content formula">1/4</div>
+            <div class="content resultado" id="result11"></div>
+            <div class="content nombre">Alto de cadera</div>
+            <input class="content enter" type="number" value="" id="id12">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result12"></div>
+            <div class="content nombre">Largo de brazo</div>
+            <input class="content enter" type="number" value="" id="id13">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result13"></div>
+            <div class="content nombre">Largo de Manga</div>
+            <input class="content enter" type="number" value="" id="id14">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result14"></div>
+            <div class="content nombre">Largo de camisa</div>
+            <input class="content enter" type="number" value="" id="id15">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result15"></div>
+            <div class="content nombre">Largo de chaqueta</div>
+            <input class="content enter" type="number" value="" id="id16">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result16"></div>
+            <div class="content nombre">Contorno de Brazo</div>
+            <input class="content enter" type="number" value="" id="id17">
+            <div class="content formula">1/2</div>
+            <div class="content resultado" id="result17"></div>
+            <div class="content nombre">Contorno de mueñeca</div>
+            <input class="content enter" type="number" value="" id="id18">
+            <div class="content formula">1/2</div>
+            <div class="content resultado" id="result18"></div>
+            <div class="content nombre">Largo de falda</div>
+            <input class="content enter" type="number" value="" id="id19">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result19"></div>
+            <div class="content nombre">Largo de pantalon</div>
+            <input class="content enter" type="number" value="" id="id20">
+            <div class="content formula"></div>
+            <div class="content resultado" id="result20"></div>
+            <div class="content nombre">Contorno de Rodilla</div>
+            <input class="content enter" type="number" value="" id="id21">
+            <div class="content formula">1/4</div>
+            <div class="content resultado" id="result21"></div>
+            <div class="content nombre">Contorno de bota</div>
+            <input class="content enter" type="number" value="" id="id22">
+            <div class="content formula">1/4</div>
+            <div class="content resultado" id="result22"></div>
+        </div>
+
+
+
+        <div class="botones">
+            <div class="boton empezar" id="empezar" onclick="calcularResultadoDe()">
+                Empezar
+            </div>
+
+            <!-- <div class="boton masAjustes"> + ajustes </div>
+
+            <div class="boton imprimir">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1" />
+                    <path
+                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+                </svg>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

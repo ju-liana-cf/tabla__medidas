@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Body styles */
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    background-color: #F3DBD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    margin: 50px;
+    width: 95%;
+    height: 80%;
+    /* background-color: gray; */
+    position: relative;
+    /* Ajustar el contenedor principal */
+    overflow: auto;
+}
+
+.cuadro {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 20%;
+    grid-template-rows: 60px repeat(22, 50px);
+    gap: 10px;
+    justify-content: center;
+
+}
+
+/* styles.css */
+
+/* Añadir estilos al input */
+
+.container input[type="number"] {
+    -moz-appearance: textfield;
+    border: none;
+}
+
+.container input[type="number"]::-webkit-inner-spin-button,
+.container input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* WebKit browsers */
+    margin: 0;
+    /* Remove margin */
+}
+
+.container input[type="number"] {
+    text-align: center;
+    /* Centrar el texto dentro del input */
+
+}
+
+
+/* Content styles */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFE8D1;
+}
+
+.container .encabezado {
+    background-color: #DD6077;
+}
+
+.container .nombre {
+    background-color: #3E9EC0;
+}
+
+.botones {
+    position: fixed;
+    bottom: 69px;
+    /* Ajustar según sea necesario */
+    right: 3%;
+    /* Ajustar según sea necesario */
+    width: 30%;
+    height: 80%;
+    /* background-color: #DD6077; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+}
+
+.botones .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.botones .boton:hover {
+    cursor: pointer;
+    scale: 0.9;
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+
+.botones .empezar {
+
+    color: #F3DBD6;
+    background-color: #DD6077;
+    width: 300px;
+    height: 60px;
+}
+
+.botones .empezar:hover {}
+
+.botones .masAjustes {
+    width: 200px;
+    height: 40px;
+    color: #F3DBD6;
+    background-color: #3E9EC0;
+}
+
+.botones .imprimir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #9b9b9b;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    background-color: #EFE8D1;
+    color: #525050;
+
+}
+
+.botones .imprimir:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+
+}
